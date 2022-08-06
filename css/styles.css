@@ -1,0 +1,157 @@
+/* Палітра кольорів */
+:root {
+  --secondary-font-color: #ffffff;
+  --black: #000;
+  --main-font-color: #737373;
+  --accent-color: #0a8bfe;
+
+  --gray-bg: #888888;
+}
+
+/* Загальні стилі для основного тексту */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-font-color);
+
+  /* Тимчасовий фон */
+  background-color: var(--gray-bg);
+}
+
+/* Скидання відступів тегів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Скидання підкреслювання посилань */
+a {
+  text-decoration: none;
+}
+
+/* Скидання маркерів списку */
+ul {
+  list-style: none;
+}
+
+/* Загальний контейнер сторінки */
+.container {
+  width: 1190px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ========== Хедер ========== */
+/* Верхні поля хедеру */
+.header {
+  padding-top: 50px;
+}
+
+/* Горизонтальне розташування елементів хедеру та їх центрування */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Стилі логотипу */
+.header-logo {
+  /* Правильне горизонтальне розташування елементів логотипу */
+  display: flex;
+  align-items: center;
+
+  /* Відступ від логотипу до меню навігації */
+  margin-right: auto;
+
+  /* Колір логотипу */
+  color: var(--secondary-font-color);
+  font-size: 16px;
+}
+
+/* Відступ від зображення логотипу до тексту логотипу */
+.header-img {
+  margin-right: 8px;
+}
+
+/* Горизонтальне розташування меню навігації та відступи між елементами */
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+/* Стилі посилань меню навігації */
+.header-link {
+  color: var(--secondary-font-color);
+  font-size: 13px;
+  line-height: 2.31;
+  /* Розширення клікабельної області елементів меню */
+  display: block;
+  padding: 30px 0;
+}
+
+/* Стилі кнопки */
+.header-button {
+  /* Шрифт */
+  font-size: 13px;
+  line-height: calc(16 / 13);
+
+  /* Колір та рамка */
+  color: var(--secondary-font-color);
+  background-color: transparent;
+  border: 1px solid var(--secondary-font-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* Відступи та внутрішні поля */
+  margin-left: 50px;
+  padding: 12px 16px;
+}
+
+/* Поля секції-героя */
+.hero {
+  padding-top: 240px;
+  padding-bottom: 270px;
+}
+
+/* Заголовок секції-героя */
+.hero-title {
+  max-width: 421px;
+  margin-bottom: 35px;
+
+  font-size: 42px;
+  font-weight: 400;
+  line-height: calc(50 / 42);
+
+  color: var(--secondary-font-color);
+}
+
+/* Текст секції-героя */
+.hero-txt {
+  max-width: 410px;
+  margin-bottom: 35px;
+
+  font-size: 11px;
+  line-height: calc(30 / 11);
+
+  color: var(--secondary-font-color);
+}
+
+/* Кнопка секції-героя */
+.hero-link {
+  /* Поля кнопки */
+  padding: 15px 37px;
+
+  /* Шрифт */
+  font-size: 15px;
+  line-height: 2;
+
+  /* Кольори та заокруглення рамки */
+  background-color: var(--accent-color);
+  color: var(--secondary-font-color);
+  border-radius: 4px;
+}
